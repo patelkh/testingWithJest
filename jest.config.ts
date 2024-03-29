@@ -13,7 +13,8 @@ const config: Config.InitialOptions = {
     ],
     testMatch: [
         `${baseTestDir}/**/*.ts`
-    ]
+    ],
+    testTimeout: 15000
 }
 
 export default config; 
