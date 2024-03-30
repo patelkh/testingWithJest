@@ -14,8 +14,8 @@ export class Server {
 
     public async startServer() {
         this.server = createServer(async (req, res) => {
-            console.log(`Got request from ${req.headers['user-agent']}`);
-            console.log(`Got request for ${req.url}`);
+            //console.log(`Got request from ${req.headers['user-agent']}`);
+            //console.log(`Got request for ${req.url}`);
             await this.handleRequest(req, res);
             res.end();
         });
@@ -63,7 +63,7 @@ export class Server {
                     if (err) {
                         reject(err);
                     } else {
-                        console.log('server closed');
+                        //console.log('server closed');
                         resolve();
                     }
                 });
